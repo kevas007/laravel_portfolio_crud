@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.welcome');
+});
+
+Route::get('/inner-page', function () {
+    return view('frontend.pages.inner-page');
+});
+
+Route::get('/portfolio-details', function () {
+    return view('frontend.pages.portfolioDetails');
 });
