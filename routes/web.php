@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortfoilioImageDimayqueController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/inner-page', function () {
 Route::get('/portfolio-details', function () {
     return view('frontend.pages.portfolioDetails');
 });
+
+Route::resource('backoffice/portfolioImageDimayque', PortfoilioImageDimayqueController::class);
